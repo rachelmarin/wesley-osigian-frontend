@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from './components/Header';
 import Home from './components/Home';
+import About from './components/About';
+import Books from './components/Books';
 import Nav from './components/Nav';
 
 class App extends React.Component {
