@@ -5,9 +5,19 @@ import About from './components/About';
 import Books from './components/Books';
 import Nav from './components/Nav';
 
-class App extends React.Component {
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+class App extends Component {
+
+  componentDidMount() {
+    this.props.fetchPlants();
+  }
  
   render() {
+    if ( this.props.loading ) {
+      return <div>Loading....</div>
+    }
+
   
     return (
     <div className="App">
