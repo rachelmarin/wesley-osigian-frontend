@@ -10,7 +10,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 class App extends Component {
 
   componentDidMount() {
-    this.props.fetchPlants();
+    this.setState.fetchBook();
   }
  
   render() {
