@@ -4,10 +4,11 @@ const Books = ({ title, id }) => {
 
     return (
     <div className='Books-single' >
-        <br/><br/>
-        <h4>Name: <Link to={`/Books/${id}`}>{ title }</Link> </h4>
-        <br/>
-     </div>
+                <h4>{name}</h4>
+                <p>{description}</p>
+                <img src={imageUrl} />
+            </div>
+
     )
 }
 
